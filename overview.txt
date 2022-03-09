@@ -1,0 +1,8 @@
+The nodes in this solution are avoid_obstacles and take_photo
+
+The take_photo node handles the photo taking part of the solution. It subscribes to the /photo_name topic and whenever it gets 
+published to, the system will take a photo and save it under the published name.
+
+The avoid_obstacles node handles the path and movement of the turtlebot. It creates a path that goes straight ahead from its initial 
+position and will adjust the movement to avoid obstacles it encounters based on the inputs received from the /scan and 
+/mobile_base/events/bumper topics. The node will also publish a name to the /photo_name topic whenever it encounters an obstacle.

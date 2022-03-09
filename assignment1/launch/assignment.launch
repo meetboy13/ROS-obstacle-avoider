@@ -1,0 +1,4 @@
+<launch>
+	<node pkg="assignment1" type="assignment.py" name="avoid_obstacles" output="screen" />
+	<node pkg="assignment1" type="takePhoto.py" name="take_photo"  output="screen" cwd="node"/>
+</launch>
